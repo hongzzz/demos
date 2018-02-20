@@ -1,0 +1,17 @@
+{
+  "name": "demos",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "https://github.com/hongzzz/demos.git",
+  "author": "hongzzz <wuchanghongzzz@gmail.com>",
+  "license": "MIT",
+  "dependencies": {},
+  "devDependencies": {
+    "eslint": "^4.18.0",
+    "eslint-config-standard": "^11.0.0",
+    "eslint-plugin-import": "^2.8.0",
+    "eslint-plugin-node": "^6.0.0",
+    "eslint-plugin-promise": "^3.6.0",
+    "eslint-plugin-standard": "^3.0.1"
+  }
+}
