@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Draw</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body, html {
+      width: 100%;
+      height: 100%;
+    }
+
+    body {
+      display: flex;
+    }
+
+    .code-wrapper {
+      flex: 1;
+      height: 100%;
+      padding: 15px;
+    }
+
+    #code {
+      height: 100%;
+      overflow: hidden;
+    }
+
+    .pic-wrapper {
+      flex: 2;
+      height: 100%;
+      border-left: 1px #000 solid;
+    }
+  </style>
+  <style id="styleTag"></style>
+</head>
+<body>
+<div class="code-wrapper">
+  <pre id="code"></pre>
+</div>
+<div class="pic-wrapper">
+  <div class="minion">
+    <div class="body">
+      <div class="hair"></div>
+      <div class="strap">
+        <div class="glass">
+          <div class="eye-socket">
+            <div class="eyeball"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="pants"></div>
+  </div>
+</div>
+<script src="./js/main.js"></script>
+</body>
+</html>
