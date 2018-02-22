@@ -1,0 +1,132 @@
+*, div::before, div::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body, html {
+  height: 100%;
+  width: 100%;
+}
+
+.center() {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+
+body {
+  background: rgb(255, 230, 0);
+}
+
+.pikachu {
+  height: 235px;
+  width: 100%;
+  .center();
+  .nose {
+    position: absolute;
+    height: 0;
+    width: 0;
+    left: 50%;
+    top: 32px;
+    transform: translateX(-50%);
+    border: 12px solid;
+    border-color: #000 transparent transparent transparent;
+    border-radius: 12px;
+  }
+  .eye {
+    position: absolute;
+    height: 65px;
+    width: 65px;
+    left: 50%;
+    border-radius: 50%;
+    background: rgb(46, 46, 46);
+    transform: translateX(-50%);
+    &::before {
+      content: '';
+      position: absolute;
+      height: 25px;
+      width: 25px;
+      left: 12px;
+      top: 5px;
+      border-radius: 50%;
+      background: #fff;
+    }
+    &.left {
+      margin-left: -120px;
+    }
+    &.right {
+      margin-left: 120px;
+    }
+  }
+  .face {
+    position: absolute;
+    height: 85px;
+    width: 85px;
+    left: 50%;
+    top: 110px;
+    border: 3px solid #000;
+    border-radius: 50%;
+    background: rgb(255, 0, 0);
+    transform: translateX(-50%);
+    &.left {
+      margin-left: -170px;
+    }
+    &.right {
+      margin-left: 170px;
+    }
+  }
+  .upper-lip {
+    position: absolute;
+    height: 30px;
+    width: 80px;
+    top: 60px;
+    border: 3px solid #000;
+    border-top: none;
+    background: rgb(255, 230, 0);
+    &.left {
+      right: 50%;
+      border-right-color: transparent;
+      border-bottom-left-radius: 60px 30px;
+      transform: rotate(-25deg);
+    }
+    &.right {
+      left: 50%;
+      border-left-color: transparent;
+      border-bottom-right-radius: 60px 30px;
+      transform: rotate(25deg);
+    }
+  }
+  .lower-lip-wrapper {
+    position: absolute;
+    height: 170px;
+    width: 400px;
+    left: 50%;
+    bottom: -8px;
+    transform: translateX(-50%);
+    overflow: hidden;
+    z-index: -1;
+    .lower-lip {
+      position: absolute;
+      height: 6500px;
+      width: 400px;
+      bottom: 0;
+      border: 4px solid #000;
+      border-radius: 50%;
+      background: rgb(155, 0, 10);
+      overflow: hidden;
+      &::before {
+        content: '';
+        position: absolute;
+        height: 130px;
+        width: 150px;
+        left: 50%;
+        bottom: 0;
+        border-radius: 50%;
+        background: rgb(255, 72, 95);
+        transform: translateX(-50%);
+      }
+    }
+  }
+}
